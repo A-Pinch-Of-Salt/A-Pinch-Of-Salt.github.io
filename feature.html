@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="icon" type="image/png" sizes="64x64" href="output-onlinepngtools (1).png">
+<title>Recipes</title>
+</head>
+<style>
+nav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+body {
+font-family: Andale Mono, monospace;
+}
+
+h1 {
+border: 2px solid black;
+padding: 25px;
+text-align: center;
+}
+
+h4 {
+text-align: center;
+}
+
+.link2 {
+color : black;
+background-color: white;
+text-decoration: underline;
+visibility: hidden;
+}
+
+.link {
+color : black;
+background-color: white;
+text-decoration: underline;
+visibility: hidden;
+}
+
+.link3 {
+color : black;
+background-color: white;
+text-decoration: underline;
+visibility: hidden;
+}
+
+.link5 {
+color : black;
+background-color: white;
+text-decoration: underline;
+visibility: hidden;
+}
+
+.center {
+text-align: center;
+}
+
+h5 {
+font-size: 17px;
+}
+</style>
+<body> 
+<nav class="w3-bar w3-black">
+<a href="#" ><img src = "output-onlinepngtools (1).png" width= "30px" height="30px"></a>
+<a href="index.html" >Home</a>
+<a href="recipes.html" >Recipes</a>
+<a href="contact.html" >Contact Us</a>
+</nav>
+
+<h1>Please select all the ingredients you want to include:</h1>
+<div class="container">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="center">
+<h3>Please note that the ingredients list only includes the ingredients 
+present in the website's recipes, as new recipes get added, the ingredients list gets updates as well.</h3>
+</div>
+</div>
+</div>
+</div>
+<br></br>
+<div id="container">
+<div id="container">
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+<h5><b>Poultry & Dairy:</b></h5>
+<input name="chicken" type="checkbox">
+<label>Chicken</label></br>
+<input name="eggs" type="checkbox">
+<label>Eggs</label></br>
+<input name="milk" type="checkbox">
+<label>Milk</label></br>
+</div>
+<div class="col-sm-2">
+<h5><b>Meat & Fish</b></h5>
+<input name="salmon" type="checkbox">
+<label>Salmon</label></br>
+<input name="ss" type="checkbox">
+<label>Smoked Salmon</label></br> 
+</div>
+<div class="col-sm-2">
+<h5><b>Fruits:</b></h5>
+<input name="strawberry" type="checkbox">
+<label>Strawberry</label></br>
+<input name="orange" type="checkbox">
+<label>Orange</label></br> 
+<input name="avocado" type="checkbox">
+<label>Avocado</label></br> 
+<input name="lemon" type="checkbox">
+<label>Lemon</label></br> 
+</div>
+<div class="col-sm-2">
+<h5><b>Vegetables:</b></h5>
+<input name="cucumber" type="checkbox">
+<label>Cucumber</label></br>
+<input name="onion" type="checkbox">
+<label>Onion</label></br>
+<input name="arugula" type="checkbox">
+<label>Arugula</label></br>
+<input name="spinach" type="checkbox">
+<label>Spinach</label></br>
+<input name="carrots" type="checkbox">
+<label>Carrots</label></br>
+<input name="mushrooms" type="checkbox">
+<label>Mushrooms</label></br>
+<input name="asp" type="checkbox">
+<label>Asparagus</label></br>
+<input name="potato" type="checkbox">
+<label>Potatoes</label></br>
+</div>
+<div class="col-sm-2">
+<h5><b>Pantry items:</b></h5>
+<input name="noodles" type="checkbox">
+<label>Egg noodles</label></br>
+<input name="choco_chips" type="checkbox">
+<label>Chocolate chips</label></br>
+<input name="nutella" type="checkbox">
+<label>Nutella</label></br> 
+<input name="flour" type="checkbox">
+<label>Flour</label></br>
+<input name="corn_flour" type="checkbox">
+<label>Corn flour</label></br> 
+<input name="bread" type="checkbox">
+<label>Bread</label></br>
+</div>
+<div class="col-sm-2">
+<h5><b>Other:</b></h5>
+<input name="capers" type="checkbox">
+<label>Capers</label></br>
+<input name="cc" type="checkbox">
+<label>Cream cheese</label></br>
+<input name="mustard" type="checkbox">
+<label>Mustard</label></br>
+<input name="honey" type="checkbox">
+<label>Honey</label></br>
+<input name="soy" type="checkbox">
+<label>Soy Sauce</label></br>
+<input name="em" type="checkbox">
+<label>English Muffin</label></br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<a class="img" id="img" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+<div class="col-sm-4">
+<a class="img" id="img2" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+<div class="col-sm-4">
+<a class="img" id="img3" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<a class="img" id="img4" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+<div class="col-sm-4">
+<a class="img" id="img5" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+<div class="col-sm-4">
+<a class="img" id="img6" href="" target="_blank"><img src="" height="300" width="300"></a>
+</div>
+</div>
+</div>
+
+<script>
+const chicken = document.querySelector('#chicken');
+const container = document.querySelector('#container');
+const boxes = document.querySelectorAll('input[type="checkbox"]');
+const img = document.querySelectorAll("img"); 
+const a = document.querySelectorAll("a"); 
+container.addEventListener('click', handleBox, false);
+function handleBox(e) {
+const { nodeName, name } = e.target;
+if (nodeName === 'INPUT') {
+const checkedBoxes = [...boxes].filter(box => box.checked);
+//chicken salad
+if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'arugula' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'strawberry' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'orange' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'cucumber' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'mustard' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'arugula' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' || 
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'arugula' || 
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'arugula' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'arugula' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'arugula' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'arugula' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'arugula' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula'||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'mustard' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'arugula' && checkedBoxes[1].name === 'mustard' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'arugula' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'arugula' && checkedBoxes[1].name === 'mustard' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 8 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'arugula' && checkedBoxes[6].name === 'mustard' && checkedBoxes[7].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'arugula' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'arugula' && checkedBoxes[6].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'onion' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'cucumber' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'honey'  ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'cucumber' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'orange' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'arugula' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 7 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'cucumber' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula'&& checkedBoxes[5].name === 'mustard' && checkedBoxes[6].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'orange' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'arugula' && checkedBoxes[4].name === 'mustard' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'arugula' && checkedBoxes[2].name === 'mustard' && checkedBoxes[3].name === 'honey'  ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'strawberry' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'cucumber' && checkedBoxes[2].name === 'onion' && checkedBoxes[3].name === 'mustard' && checkedBoxes[4].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'honey' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'strawberry' && checkedBoxes[2].name === 'orange' && checkedBoxes[3].name === 'onion' && checkedBoxes[4].name === 'arugula' && checkedBoxes[5].name === 'mustard' 
+){
+img[1].src = "salad.png"; 
+a[4].href = "chicken_salad.html"; 
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+} 
+//eclairs
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'choco_chips' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'choco_chips' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'choco_chips' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'choco_chips' && checkedBoxes[1].name === 'flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'choco_chips' && checkedBoxes[1].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'choco_chips' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'choco_chips' && checkedBoxes[3].name === 'flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'choco_chips'&& checkedBoxes[3].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'flour' && checkedBoxes[3].name === 'corn_flour'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'choco_chips'&& checkedBoxes[3].name === 'flour' && checkedBoxes[4].name === 'corn_flour'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'choco_chips' && checkedBoxes[1].name === 'flour' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'choco_chips' && checkedBoxes[2].name === 'flour' && checkedBoxes[3].name === 'corn_flour'
+){
+img[1].src = "ecl.png"; 
+a[4].href = "eclair.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+} 
+//noodle stir-fry
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'carrots' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'mushrooms' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'noodles' ||
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'soy' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mushrooms' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'noodles' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'soy' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mushrooms' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'noodles' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'soy' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'mushrooms' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'noodles' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'soy' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'mushrooms' && checkedBoxes[1].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mushrooms' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots' && checkedBoxes[3].name === 'mushrooms' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots'&& checkedBoxes[3].name === 'noodles' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'noodles'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots'&& checkedBoxes[3].name === 'mushrooms' && checkedBoxes[4].name === 'noodles'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'noodles' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'mushrooms' && checkedBoxes[1].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'noodles' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'noodles' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'noodles' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'noodles' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'noodles' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'mushrooms' && checkedBoxes[1].name === 'noodles' && checkedBoxes[2].name === 'soy' ||
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots'&& checkedBoxes[3].name === 'mushrooms' && checkedBoxes[4].name === 'noodles' && checkedBoxes[5].name === 'soy'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots'&& checkedBoxes[3].name === 'mushrooms' && checkedBoxes[4].name === 'soy'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots'&& checkedBoxes[3].name === 'noodles' && checkedBoxes[4].name === 'soy'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mushrooms'&& checkedBoxes[3].name === 'noodles' && checkedBoxes[4].name === 'soy'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms'&& checkedBoxes[3].name === 'noodles' && checkedBoxes[4].name === 'soy'||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion' && checkedBoxes[2].name === 'carrots' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'onion' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'carrots' && checkedBoxes[2].name === 'mushrooms'&& checkedBoxes[3].name === 'noodles' && checkedBoxes[4].name === 'soy' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'carrots' && checkedBoxes[1].name === 'mushrooms' && checkedBoxes[2].name === 'noodles' && checkedBoxes[3].name === 'soy' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'noodles' && checkedBoxes[1].name === 'soy' 
+){
+img[1].src = "n.png"; 
+a[4].href = "noodle.html"; 
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+} 
+//noodle stir-fry & chicken salad
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'chicken' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'onion' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'chicken' && checkedBoxes[1].name === 'onion'
+){
+img[1].src = "salad.png";
+img[2].src = "n.png";  
+a[4].href = "chicken_salad.html";
+a[5].href = "noodle.html"; 
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'visible';
+}
+//eclairs & paris brest
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'milk' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'flour' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'corn_flour' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'flour' && checkedBoxes[3].name === 'corn_flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'flour' && checkedBoxes[1].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'flour' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'flour' && checkedBoxes[2].name === 'corn_flour'
+){
+img[1].src = "ecl.png"; 
+img[2].src = "pbox.png"; 
+a[4].href = "eclair.html";  
+a[5].href = "pb.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'visible'; 
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+}
+//paris brest
+ else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'nutella' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'nutella' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'nutella' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'nutella' && checkedBoxes[1].name === 'flour' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'nutella' && checkedBoxes[1].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'nutella' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'nutella' && checkedBoxes[3].name === 'flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'nutella'&& checkedBoxes[3].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'flour' && checkedBoxes[3].name === 'corn_flour'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'milk' && checkedBoxes[2].name === 'nutella'&& checkedBoxes[3].name === 'flour' && checkedBoxes[4].name === 'corn_flour'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'nutella' && checkedBoxes[1].name === 'flour' && checkedBoxes[2].name === 'corn_flour' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'milk' && checkedBoxes[1].name === 'nutella' && checkedBoxes[2].name === 'flour' && checkedBoxes[3].name === 'corn_flour'
+){
+img[1].src = "pbox.png"; 
+a[4].href = "pb.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+} 
+//eclairs & paris brest & breakfast toast
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'eggs'){
+img[1].src = "ecl.png"; 
+img[2].src = "pbox.png"; 
+img[3].src = "ebrbox.png"; 
+img[4].src = "embox.png"; 
+a[4].href = "eclair.html";  
+a[5].href = "pb.html";
+a[6].href = "ebr.html";
+a[7].href = "em.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'visible'; 
+document.getElementById('img3').style.visibility = 'visible'; 
+document.getElementById('img4').style.visibility = 'visible'; 
+}
+//breakfast toast
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'cc' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'avocado' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'bread' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'capers' || 
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'bread' && checkedBoxes[4].name === 'capers' && checkedBoxes[5].name === 'cc' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'bread' && checkedBoxes[4].name === 'capers' || 
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'bread' && checkedBoxes[4].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'bread' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'capers' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'cc' || 
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'bread' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'cc' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'bread' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'cc' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'bread' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'capers' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'cc' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'bread' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'capers' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'cc' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'bread' && checkedBoxes[1].name === 'capers' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'bread' && checkedBoxes[1].name === 'cc' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'capers' && checkedBoxes[1].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'capers' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'bread' && checkedBoxes[1].name === 'capers' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'cc'||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' && checkedBoxes[4].name === 'cc'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'capers' && checkedBoxes[2].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'avocado' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' && checkedBoxes[4].name === 'cc' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'bread' && checkedBoxes[2].name === 'capers' && checkedBoxes[3].name === 'cc' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'bread' && checkedBoxes[3].name === 'capers' && checkedBoxes[4].name === 'cc' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'avocado' && checkedBoxes[3].name === 'capers' && checkedBoxes[4].name === 'cc' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'avocado' && checkedBoxes[1].name === 'capers' && checkedBoxes[2].name === 'cc'  
+) {
+img[1].src = "ebrbox.png"; 
+a[4].href = "ebr.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+}
+//egg and smoked salmon recipes
+else if (checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' ||
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'ss' 
+){
+img[1].src = "ebrbox.png"; 
+a[4].href = "ebr.html";
+img[2].src = "embox.png"; 
+a[5].href = "em.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'visible';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+
+}
+//Smoked Salmon egg benedict
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'em' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'lemon' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'spinach' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'asp' || 
+checkedBoxes.length === 6 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'spinach' && checkedBoxes[4].name === 'asp' && checkedBoxes[5].name === 'em' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'spinach' && checkedBoxes[4].name === 'asp' || 
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'spinach' && checkedBoxes[4].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'spinach' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'asp' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'em' || 
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'spinach' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'em' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'spinach' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'em' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'spinach' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'asp' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'em' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'spinach' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'em' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'spinach' && checkedBoxes[1].name === 'asp' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'spinach' && checkedBoxes[1].name === 'em' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'asp' && checkedBoxes[1].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'spinach' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'em'||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' && checkedBoxes[4].name === 'em'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' || 
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' && checkedBoxes[4].name === 'em' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'ss' && checkedBoxes[1].name === 'spinach' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'em' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'spinach' && checkedBoxes[3].name === 'asp' && checkedBoxes[4].name === 'em' ||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'eggs' && checkedBoxes[1].name === 'ss' && checkedBoxes[2].name === 'lemon' && checkedBoxes[3].name === 'asp' && checkedBoxes[4].name === 'em' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'em'  
+){
+img[1].src = "embox.png"; 
+a[4].href = "em.html";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+}
+//salmon dish
+else if (checkedBoxes.length === 1 && checkedBoxes[0].name === 'asp' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'asp' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'asp' && checkedBoxes[1].name === 'potato' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'asp' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'potato' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'potato' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp'&& checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'potato' && checkedBoxes[3].name === 'honey'||
+checkedBoxes.length === 5 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'asp' && checkedBoxes[3].name === 'potato' && checkedBoxes[4].name === 'honey'||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'potato' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'asp' && checkedBoxes[1].name === 'potato' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'asp' && checkedBoxes[2].name === 'potato' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'lemon' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'potato' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'salmon' || 
+checkedBoxes.length === 1 && checkedBoxes[0].name === 'honey' || 
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'potato' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 4 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'potato' && checkedBoxes[3].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'potato' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'potato' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'potato' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'salmon' && checkedBoxes[1].name === 'lemon' && checkedBoxes[2].name === 'honey' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'potato' ||
+checkedBoxes.length === 2 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'honey' ||
+checkedBoxes.length === 3 && checkedBoxes[0].name === 'lemon' && checkedBoxes[1].name === 'potato' && checkedBoxes[2].name === 'honey'
+){
+img[1].src = "";
+a[4].href = "";
+document.getElementById('img').style.visibility = 'visible';
+document.getElementById('img2').style.visibility = 'hidden';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden'; 
+}
+//no recipe
+else {
+img[2].src = "sorry.png"; 
+a[5].href = "";
+document.getElementById('img').style.visibility = 'hidden';
+document.getElementById('img2').style.visibility = 'visible';
+document.getElementById('img3').style.visibility = 'hidden';
+document.getElementById('img4').style.visibility = 'hidden';
+document.getElementById('img5').style.visibility = 'hidden';
+document.getElementById('img6').style.visibility = 'hidden';
+}
+}
+}
+</script>
+</body>
+</html>
